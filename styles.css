@@ -1,0 +1,203 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gill Sans:wght@400;700&display=swap');
+
+
+
+body {
+    font-family: 'Gill Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f7ff;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    background: linear-gradient(to bottom #0771d5, #40a9ff); /* added a gradient background */
+    color: #fff; /* added white text color */
+    border-bottom: 1px solid #1890ff; 
+}
+
+.hero {
+    background: linear-gradient(to bottom, #0771d5, #1890ff); /* added a gradient background */
+    padding: 50px 0;
+    text-align: center;
+    color: #fff; /* added white text color */
+    margin-top: 0;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+section {
+    margin: 20px;
+}
+
+#about, #abilities, #contact, #projects, #experience {
+    background-color: #fff; /* changed from white to #fff for consistency */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #1890ff; /* added a medium blue border */
+    background-image: url('/assets/light-background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+a {
+    color: #00008B; /* dark blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0000CD; /* medium blue */
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.navbar .nav-link {
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #40a9ff;
+}
+
+.profile-picture {
+    transition: transform 0.3s ease;
+}
+
+.profile-picture:hover {
+    transform: scale(1.1);
+}
+
+.section-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.5); /* white with 50% opacity */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section-box:hover {
+    transform: scale(1.03);
+}
+
+.section-box img {
+    max-width: 45%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.section-box div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.section-box:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.title {
+    font-size: 28px; /* adjust as needed */
+    color: #660000; /* dark blue */
+    font-weight: bold; /* adjust as needed */
+    margin-bottom: 10px; /* adjust as needed */
+}
+
+.section-text {
+    font-size: 18px; /* adjust as needed */
+    color: #000000; /* black */
+    line-height: 1.5; /* adjust as needed */
+}
+
+.dropdown-item {
+    color: #007bff; /* Change the text color */
+    font-weight: bold; /* Make the text bold */
+}
+
+.dropdown-item:hover {
+    color: #0056b3; /* Darken the text color when hovering */
+    background-color: #f8f9fa; /* Change the background color when hovering */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Change the icon color to white */
+}
+
+#nav-link.dropdown-toggle {
+    color: #fff; /* Change the text color */
+    background-color: #007bff; /* Change the background color */
+    border-radius: 5px; /* Add some roundness to the button */
+    padding: 10px 20px; /* Add some padding */
+    transition: all 0.5s ease; /* Add a transition for smooth color change */
+}
+
+#nav-link.dropdown-toggle:hover {
+    color: #fff; /* Keep the text color white when hovering */
+    background-color: #0056b3; /* Darken the background color when hovering */
+}
+
+#nav-link.dropdown-toggle:active {
+    color: #fff; /* Keep the text color white when active */
+    background-color: #003580; /* Darken the background color even more when active */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-form {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #add8e6; /* Lighter blue for the submit button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover{
+    background-color: #87ceeb; /* Darker blue when hovering over the submit button */
+}
+

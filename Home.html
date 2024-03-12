@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Página de Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menú
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#about">Sobre Mí</a>
+                        <a class="dropdown-item" href="#abilities">Habilidades</a>
+                        <a class="dropdown-item" href="#projects">Proyectos</a>
+                        <a class="dropdown-item" href="#experience">Experiencia</a>
+                        <a class="dropdown-item" href="#contact">Contacto</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <img class="profile-picture rounded-circle mb-4" src="/assets/Fer.jpg" alt="Mi Foto">
+            <h1 class="display-4">¡Bienvenidos a mi Portafolio!</h1>
+            <p class="lead">Técnico Universitario en Sistemas. Estudiante del séptimo semestre de la Licenciatura en Sistemas Informáticos</p>
+        </div>
+    </header>
+    <section id="about" data-speed="2" data-aos="fade-up">
+        <div class="section-box">
+            <div>
+                <h2 class="title">Sobre Mí</h2>
+                <p class="section-text">Hola Mundo</p>
+            </div>
+            <img data-src="/assets/about.jpg" alt="Contact" class="lazy">
+        </div>
+    </section>
+    
+    <section id="abilities" data-aos="fade-up" data-speed="2">
+        <div class="section-box">
+            <img data-src="/assets/mantenimientoPC.jpg" alt="Abilities" class="lazy">
+            <div>
+                <h2 class="title">Habilidades</h2>
+                <p class="section-text">Hola Mundo</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" data-aos="fade-up" data-speed="2">
+        <div class="section-box">
+            <div>
+                <h2 class="title">Proyectos</h2>
+                <p class="section-text">Hola Mundo</p>
+            </div>
+            <img data-src="/assets/home_cine.png" alt="Projects" class="lazy">
+        </div>
+    </section>
+    
+    <section id="experience" data-aos="fade-up" data-speed="2">
+        <div class="section-box">
+            <img data-src="/assets/translator.jpg" alt="Experience" class="lazy">
+            <div>
+                <h2 class="title">Experiencia</h2>
+                <p class="section-text">Hola Mundo</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" data-aos="fade-up" data-speed="2">
+        <div class="contact-container">
+            <div>
+                <h2 class="title">Contacto</h2>
+                <p class="section-text">GitHub: <a href="https://github.com/TheFerelNando"><img class = "icon" src="/assets/github.png" alt="GitHub Icon"> Mi GitHub</a></p>
+                <p class="section-text">Facebook: <a href="https://www.facebook.com/fer.perezc2001/"><img class = "icon" src="/assets/facebook.png" alt="Facebook Icon"> Mi Facebook</a></p>
+                <p class="section-text">Instagram: <a href="https://www.instagram.com/fperez0120/"><img class = "icon" src="/assets/instagram.png" alt="Instagram Icon"> Mi Instagram</a></p>
+                <p class="section-text">Resume: <a href="https://drive.google.com/file/d/1YFTN1Uu1s58ANPvL13Nv7h2oWI6yti4T/view?usp=sharing"><img class = "icon" src="/assets/graduacion.png" alt = "CV Icon"> Mi Curriculum</a></p>
+            </div>
+            <div>
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="module" src="/javascript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("YOUR_USER_ID"); // Replace it with your EmailJS user ID
+    })();
+</script>
+</body>
+</html>
